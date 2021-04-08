@@ -35,7 +35,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 🧭 Rodando o bot
 
 # Precisa de um bot
-Antes de começar, você precisa ter criado um bot e salvo o token de integração. 
+Antes de começar, você precisa criar um bot e salvar o token de integração. 
 
 # Como faço para criar um bot ?
 
