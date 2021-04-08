@@ -7,7 +7,7 @@ Um bot para o Telegram feito em Node.js, usando o framework Telegraf.js, que cri
 
 Recursos disponíveis no bot:
 
-- <a href="#solicita-cardapio">Solicitar cárdapio</a>
+- <a href="#solicita-cardapio">Solicitar cardápio</a>
 - <a href="#iniciar-pedido">Iniciar pedido</a>
 - <a href="#get-produto">Escolher o produto</a>
 - <a href="#add-produtos/">Adicionar itens ao pedido</a>
