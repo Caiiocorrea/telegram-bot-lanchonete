@@ -1,7 +1,6 @@
 <font style="vertical-align: inherit;"># AprendBotBot</font>
 
-<img src="https://drive.google.com/file/d/1dgQOIXQNnO3WG2dUwfU1bqzPbDD6kV5I/view?usp=sharing" width="40" height="40" />
-
+![](https://drive.google.com/file/d/1dgQOIXQNnO3WG2dUwfU1bqzPbDD6kV5I/view?usp=sharing)
 
 Um bot para o Telegram feito em Node.js, usando o framework Telegraf.js, que cria pedidos checa o status do mesmo.
 
