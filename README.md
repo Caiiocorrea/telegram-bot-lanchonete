@@ -8,12 +8,12 @@ Um bot para o Telegram feito em Node.js, usando o framework Telegraf.js, que cri
 Recursos disponíveis no bot:
 
 - <a href="#solicita-cardapio">Solicitar cárdapio</a>
-- - <a href="#iniciar-pedido">Iniciar pedido</a>
+- <a href="#iniciar-pedido">Iniciar pedido</a>
 - <a href="#get-produto">Escolher o produto</a>
 - <a href="#add-produtos/">Adicionar itens ao pedido</a>
 - <a href="#finalizar-pedido">Finalizar pedido</a>
 - <a href="#cancelar-pedido/">Cancelar pedido</a>
-- - <a href="#status-pedido/">Verificar status do pedido</a>
+- <a href="#status-pedido/">Verificar status do pedido</a>
 
 💻 Sobre o projeto
 
