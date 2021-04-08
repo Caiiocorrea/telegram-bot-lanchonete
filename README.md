@@ -1,6 +1,6 @@
-#
+# Telegram-bot
 
-<img src="https://user-images.githubusercontent.com/49397996/113971399-15a50600-980f-11eb-8938-a235ce5b8d94.gif" align="center" />
+<img src="https://user-images.githubusercontent.com/49397996/113971399-15a50600-980f-11eb-8938-a235ce5b8d94.gif" align="right" />
 
 
 Um bot para o Telegram feito em Node.js, usando o framework Telegraf.js, que cria pedidos checa o status do mesmo.
