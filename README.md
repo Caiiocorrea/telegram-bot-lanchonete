@@ -1,7 +1,6 @@
 # AprendBotBot
 
-![WhatsApp Video 2021-04-06 at 22 03](https://user-images.githubusercontent.com/49397996/113971399-15a50600-980f-11eb-8938-a235ce5b8d94.gif)
-<img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="100" height="100" align="center" />
+<img src="https://user-images.githubusercontent.com/49397996/113971399-15a50600-980f-11eb-8938-a235ce5b8d94.gif" align="center" />
 
 
 Um bot para o Telegram feito em Node.js, usando o framework Telegraf.js, que cria pedidos checa o status do mesmo.
