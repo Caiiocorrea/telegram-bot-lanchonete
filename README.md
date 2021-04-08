@@ -1,4 +1,4 @@
-<font style="vertical-align: inherit;"># AprendBotBot</font>
+# AprendBotBot
 
 ![](https://drive.google.com/file/d/1dgQOIXQNnO3WG2dUwfU1bqzPbDD6kV5I/view?usp=sharing)
 
