@@ -1,4 +1,4 @@
-# telegram-bot
+# telegram-bot-lanchonte
 
 Um bot para o Telegram feito em Node.js, usando o framework Telegraf.js, que cria pedidos checa o status do mesmo.
 
