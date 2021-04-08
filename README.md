@@ -1,8 +1,7 @@
 # AprendBotBot
 
-<kbd>
-    <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1dgQOIXQNnO3WG2dUwfU1bqzPbDD6kV5I/view?usp=sharing"><img width="250" height="450" src="https://drive.google.com/file/d/1dgQOIXQNnO3WG2dUwfU1bqzPbDD6kV5I/view?usp=sharing" alt="Intro" data-canonical-src="https://drive.google.com/file/d/1dgQOIXQNnO3WG2dUwfU1bqzPbDD6kV5I/view?usp=sharing" style="max-width:100%;"></a>
-  </kbd>
+![WhatsApp Video 2021-04-06 at 22 03](https://user-images.githubusercontent.com/49397996/113971399-15a50600-980f-11eb-8938-a235ce5b8d94.gif)
+
 
 Um bot para o Telegram feito em Node.js, usando o framework Telegraf.js, que cria pedidos checa o status do mesmo.
 
