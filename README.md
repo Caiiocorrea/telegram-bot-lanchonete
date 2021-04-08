@@ -44,6 +44,7 @@ O nome do seu bot é exibido nos detalhes de contato e em outros lugares.
 # Gerando um token de autorização
 
 O token é uma string ao longo das linhas <code>h110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsawque</code> é necessária para autorizar o bot e enviar solicitações para a API do bot
+
 Se o token existente estiver comprometido ou se você o perdeu por algum motivo, use o comando <a href="#new-token">/token</a> para gerar um novo.
 
 # Clone este repositório
