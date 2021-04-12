@@ -1,7 +1,7 @@
-const Telegraf = require('telegraf')
+const Telegraf = require('telegraf');
 const fetch = require('node-fetch');
 const axios = require('axios')
-const bot = new Telegraf('TOKEN')
+const bot = new Telegraf(TOKEN)
 
 
 const moment = require('moment'); // require
@@ -24,6 +24,9 @@ moment().format();
     let passwd = 0
     let lancheStatus = 0
     let pegaChat = 0
+    let pegaStatus = 0
+    let pegaMStatus = ''
+
 
     let menu = 
     `Escolha qual lanche deseja comer ?
@@ -89,8 +92,8 @@ bot.hears(['/Pedido','Pedido', 'pedido','/pedido', '1', '2', '3', '4', '5', '6',
             await ctx.reply(menu)
 
             //Obtém o chat_ID
-            pegaChat = ctx.update.update_id
-            console.log(pegaChat)
+            //pegaChat = ctx.update.update_id
+            //console.log(pegaChat)
 
         } else  if (ctx.match == 1) {
             
@@ -213,7 +216,8 @@ const salvaBanco = async () => {
             });
 
             const data = await response.json();
-            console.log(data);
+            //const pegaId = data
+            //console.log(pegaId);
 
         console.log(`Pedido #${passwd} salvo com sucesso no banco de dados`)
 
@@ -224,48 +228,61 @@ const salvaBanco = async () => {
 
 
 bot.hears(['/Status', 'Status', '/status', 'status' ], async (ctx) => {
-    
+
+    const myStatus = async () => { 
     try {
- 
-        const response = await axios.get(`http://localhost:8080api/v1/pedido/${passwd}`, { setTimeout: 3000 })
-        var dados = response.data
-        console.log(dados)
 
-       let pegaStatus = dados[0].lancheStatus;
-       console.log(pegaStatus);
-
-       switch (pegaStatus){
-           case 0:
-            console.log('Pedido aguardando aprovação');
-            await ctx.reply('Pedido aguardando aprovação')
-            break;
-           case 1:
-             console.log('Pedido em produção');
-             await ctx.reply('Pedido em produção')
-             break;
-           case 2:
-             console.log('Saiu para entrega');
-             await ctx.reply('Saiu para entrega')
-             break;
-           default: 
-             console.log('Nenhuma movimentação no pedido')
-             await ctx.reply('Nenhuma movimentação no pedido')
-       }
+        const response = await axios.get(`http://localhost:8080/api/v1/pedido/0137`, { setTimeout: 1000 })
+        var dados = response.data[0].lancheStatus;
+        pegaStatus = dados
 
 
+    if (pegaMStatus === pegaStatus) {
+        //console.log('Pedido #0137 ainda não mudou o status');
+
+    } else {
+        pegaMStatus = pegaStatus
+
+        switch (pegaStatus){
+            case 0:
+              await ctx.reply('Pedido aguardando aprovação')
+              pegaMStatus = 0
+              break;
+
+            case 1:
+              await ctx.reply('Pedido em produção')
+              pegaMStatus = 1
+              break;
+
+            case 2:
+              pegaMStatus = 2
+              await ctx.reply('Saiu para entrega')
+              break;
+
+            case 3:
+              await ctx.reply('Obrigado pela preferência')
+              pegaMStatus = 3
+              break;
+
+            default: 
+              await ctx.reply('Nenhum pedido em aberto')
+        }
+
+    }
 
     } catch(error) {
         console.error(error)
     }
 
+ }
+    setInterval(myStatus, 5000, 'Status');
 })
-
 
 
 const startBot = async () => {
     try {
         await bot.launch()
-        console.log('AprendBot iniciado com successo')
+        console.log('SigmaBot iniciado com successo')
     } catch(error) {
         console.error(error)
     }
