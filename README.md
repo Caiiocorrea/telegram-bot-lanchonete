@@ -66,6 +66,3 @@ $ npm start | yarn start
 
 
 Feito com ❤️ por Caio S. Corrêa 👋🏽 Entre em contato!
-
-Fonte - <a href="https://rocketseat.com.br/">Rocketseat - Starter</a>
-
